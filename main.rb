@@ -1,4 +1,9 @@
 require 'time'
 
-t = Time.parse(gets.chomp)
-p "#{t.day}/#{t.month}/#{t.year}"
+def format_time(t)
+  t = Time.parse(t)
+  "#{t.day}/#{t.month}/#{t.year}"
+end
+
+
+p format_time(gets.chomp)
